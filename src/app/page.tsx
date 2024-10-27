@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div>
       NEXT JS APP
-      <div>{tg?.initDataUnsafe?.user?.username}</div>
+      <div>Username = {tg?.initDataUnsafe?.user?.username}</div>
       <button onClick={onCLose}>Close</button>
     </div>
   );
