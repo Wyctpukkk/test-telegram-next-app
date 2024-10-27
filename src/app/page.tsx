@@ -6,11 +6,11 @@ const tg = global.Telegram?.WebApp;
 
 export default function Home() {
   const onCLose = () => {
-    tg && tg.close();
+    tg?.close();
   };
 
   useEffect(() => {
-    tg && tg.ready();
+    tg?.ready();
   }, []);
 
   return (

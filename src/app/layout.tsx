@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Script from 'next/script';
 import './globals.css';
 
 export default function RootLayout({
@@ -8,9 +8,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <script src="https://telegram.org/js/telegram-web-app.js"></script>
-      </Head>
+      <Script src="https://telegram.org/js/telegram-web-app.js"></Script>
       <body>{children}</body>
     </html>
   );
